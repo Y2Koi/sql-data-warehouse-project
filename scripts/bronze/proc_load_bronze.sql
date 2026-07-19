@@ -83,7 +83,6 @@ BEGIN
 		SET @start_time = GETDATE();
 		PRINT '>> Truncating Table: bronze.erp_cust_az12';
 		TRUNCATE TABLE bronze.erp_cust_az12;
-
 		PRINT '>> Inserting Data Into: bronze.erp_cust_az12';
 		BULK INSERT bronze.erp_cust_az12
 		FROM 'C:\Users\mkhoi\Downloads\Data Warehousing Files\sql-data-warehouse-project\sql-data-warehouse-project\datasets\source_erp\cust_az12.csv'
@@ -99,7 +98,6 @@ BEGIN
 		SET @start_time = GETDATE();
 		PRINT '>> Truncating Table: bronze.erp_loc_a101';
 		TRUNCATE TABLE bronze.erp_loc_a101;
-
 		PRINT '>> Inserting Data Into: bronze.erp_loc_a101';
 		BULK INSERT bronze.erp_loc_a101
 		FROM 'C:\Users\mkhoi\Downloads\Data Warehousing Files\sql-data-warehouse-project\sql-data-warehouse-project\datasets\source_erp\loc_a101.csv'
@@ -115,7 +113,6 @@ BEGIN
 		SET @start_time = GETDATE();
 		PRINT '>> Truncating Table: bronze.erp_px_cat_g1v2';
 		TRUNCATE TABLE bronze.erp_px_cat_g1v2;
-
 		PRINT '>> Inserting Data Into: bronze.erp_px_cat_g1v2';
 		BULK INSERT bronze.erp_px_cat_g1v2
 		FROM 'C:\Users\mkhoi\Downloads\Data Warehousing Files\sql-data-warehouse-project\sql-data-warehouse-project\datasets\source_erp\px_cat_g1v2.csv'
